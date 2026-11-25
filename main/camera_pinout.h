@@ -63,6 +63,7 @@
 #define CAM_PIN_D7 16
 #endif
 // NullLab ESP32-S3-CAM PIN Map
+#ifdef BOARD_ESP32S3_NULLLAB
 #define CAM_PIN_PWDN -1
 #define CAM_PIN_RESET -1
 #define CAM_PIN_VSYNC 6
@@ -79,6 +80,7 @@
 #define CAM_PIN_D5 18
 #define CAM_PIN_D6 17
 #define CAM_PIN_D7 16
+#endif
 
 // ESP32S3 (GOOUU TECH)
 #ifdef BOARD_ESP32S3_GOOUUU

@@ -1,9 +1,5 @@
 #include "esp_camera.h"
 #include "esp_wifi.h"
-
-#include "camera_pinout.h"
-#include "app_httpd.h"
-#include "wifi_utils.h"
 #include "esp_log.h"
 
 
@@ -37,6 +33,10 @@
 //#define CAMERA_MODEL_ESP32S3_CAM_LCD
 //#define CAMERA_MODEL_DFRobot_FireBeetle2_ESP32S3 // Has PSRAM
 //#define CAMERA_MODEL_DFRobot_Romeo_ESP32S3 // Has PSRAM
+
+#include "camera_pinout.h"
+#include "app_httpd.h"
+#include "wifi_utils.h"
 
 #define TAG "main::camera_server"
 
