@@ -1,9 +1,7 @@
 ## Intro ##
 This respository is a port of the standard Arduino CameraWebserver demo for the esp32 board to run within the ESP-IDF environment. It also adds support for Nulllab's esp32s3-cam board layout. I made this to familiarize myself with the wifi and camera componenets of the ESP-IDF environment and am releasing it to the public to help any others in a similar position.
 
-## Usage ##
-
-### Configuration ###
+## Configuration ##
 To start off be sure to set the target for your project using
 ```bash
 idf.py set-target esp32s3
@@ -25,14 +23,14 @@ In `wifi_utils.h`, enter your wifi ssid and password into the corresponding macr
 
 Before running be sure the macro in `myCamServer.c` corresponding to your board is uncommented and all others are commented out.
 
-### Dependencies ###
+## Dependencies ##
 The program should run out of the box in the ESP-IDF environment without any extra installation. However, newer users should note that the camera and jpeg dependencies were pre-installed into the `managed_components` folder using 
 ```bash
 idf.py add-dependency "espressif/<package-name>"
 ```
 for both components. Any fresh folders for similar projects would need to do the same to install the dependency.
 
-### Running ###
+## Running ##
 To run the code you will need the name of the usb port your board is connected to. To find that name, first plug in your board then run
 ```bash
 sudo dmesg | grep tty
